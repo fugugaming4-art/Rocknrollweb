@@ -1698,14 +1698,58 @@
         // --- ⚙️ CONFIGURATION ⚙️ ---
         // CONFIG is already handled in the head
         // --- COMMAND LIST DATA ---
-        const commands = { My Prefix is . 
-            fun: ['jailed, wanted, wasted, chess, connect4, ttt, rps, wordle, 2048, ship, tickle , kiss , slap , feed , pet , howcute , howgay , slots , penis , sigma , pickupline, iplookup'],
-            giveaway: ['.gstart'],
-            mod: [mute , unmute , unmuteall , kick , warn , ban , unban , nick , setprefix , clear , clear all , clear bots , clear embeds , clear files , clear mentions , clear images , clear contains , clear reactions , clear user , clear emoji , role, role humans, role bots, nuke , lock , unlock , hide , unhide , unbanall, hideall , unhideall, rolecolor , roleicon, steal , addsticker automod , automod enable , automod disable , automod punishment , automod config , automod logging , automod ignore , automod ignore channel , automod ignore role , automod ignore show , automod ignore reset , automod unignore , automod unignore channel , automod unignore role],
-            reports: ['not rn'],
-            setup: ['.ticket setup',],
-            utility: [afk , avatar , firstmessage, servericon , membercount, snipe , invite , serverinfo , userinfo , roleinfo , botinfo , boosts , ping, list boosters , list inrole , list emojis , list bots , list admins , list invoice , list mods , list roles , banner user , banner server],
-        };
+// CONFIG is already handled in the head
+
+// --- COMMAND LIST DATA ---
+const PREFIX = ".";
+
+const COMMANDS = {
+  fun: [
+    "jailed", "wanted", "wasted", "chess", "connect4", "ttt", "rps",
+    "wordle", "2048", "ship", "tickle", "kiss", "slap", "feed", "pet",
+    "howcute", "howgay", "slots", "penis", "sigma", "pickupline", "iplookup"
+  ],
+
+  giveaway: [
+    "gstart"
+  ],
+
+  mod: [
+    "mute", "unmute", "unmuteall", "kick", "warn", "ban", "unban",
+    "nick", "setprefix", "clear", "clearall", "clearbots", "clearembeds",
+    "clearfiles", "clearmentions", "clearimages", "clearcontains",
+    "clearreactions", "clearuser", "clearemoji",
+    "role", "rolehumans", "rolebots",
+    "nuke", "lock", "unlock", "hide", "unhide",
+    "unbanall", "hideall", "unhideall",
+    "rolecolor", "roleicon", "steal",
+    "automod", "automod-enable", "automod-disable",
+    "automod-punishment", "automod-config", "automod-logging",
+    "automod-ignore", "automod-ignore-channel", "automod-ignore-role",
+    "automod-ignore-show", "automod-ignore-reset",
+    "automod-unignore", "automod-unignore-channel", "automod-unignore-role"
+  ],
+
+  reports: [
+    "not-rn"
+  ],
+
+  setup: [
+    "ticket setup"
+  ],
+
+  utility: [
+    "afk", "avatar", "firstmessage", "servericon", "membercount",
+    "snipe", "invite", "serverinfo", "userinfo", "roleinfo", "botinfo",
+    "boosts", "ping",
+    "list-boosters", "list-inrole", "list-emojis", "list-bots",
+    "list-admins", "list-invoice", "list-mods", "list-roles",
+    "banner-user", "banner-server"
+  ]
+};
+
+// --- INIT ---
+
         // --- INIT ---
         document.addEventListener('DOMContentLoaded', () => {
             // Hide Loading Screen after page is fully loaded
